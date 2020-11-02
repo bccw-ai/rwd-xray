@@ -91,6 +91,17 @@ car_models = {
       #(checksum func idx, offset)
      'checksum-offsets': [(0, 0x4bf80), (1, 0x4bffe)]
   },
+   
+  '39990-TBX-3050': { #civic sedan thanks to mystery leaker
+    'can-address': '0x18DA30F1',
+    'supported-versions': ['39990-TBX-H110', '39990-TBX-H120', '39990-TBX-3050'],
+    'security-key': ['0x0211021212', '0x0211021212', '0x0211021212'],
+    'encryption-key': '0xbf109e',
+    'start-address': 0x13000,
+    'data-size': 0xed000,
+    # (checksum func idx, offset)
+    'checksum-offsets': [(0, 0x4bf80), (1, 0x4bffe)] #original bin checksums are 0xDD23 at offset 0x4FF80 and 0xEDDF at 0x4FFFE, but since we start the bin from 0x4000 after bootloader, we offset the checksum accordingly
+  },
 }
 
 

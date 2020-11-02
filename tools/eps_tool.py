@@ -68,7 +68,7 @@ def main():
             data_offsets = [
                 0x11908, #speed_clamp_lo
 
-                0x11b5e, #torque_table row 1
+                0x11b5e, #torque_table row 1 -> 18 byte
                 0x11b70, #torque_table row 2
                 0x11b82, #torque_table row 3
                 0x11b94, #torque_table row 4
@@ -76,11 +76,11 @@ def main():
                 0x11bb8, #torque_table row 6
                 0x11bca, #torque_table row 7
 
-                0x11db0, #filter_table row 1
+                0x11db0, #filter_table row 1 -> 63
 
-                0x11eac, #new_table row 1
+                0x11eac, #new_table row 1 -> 63
 
-                0x119ae, #speed_table row 1
+                0x119ae, #speed_table row 1 -> 63
                 ]
             data_old = [
                 '0x0028', #speed_clamp_lo

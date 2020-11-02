@@ -1,2 +1,7 @@
 *.pyc 
 .idea/
+*.bin
+*.rwd
+*.rwd.gz
+*.gz
+*.enc
